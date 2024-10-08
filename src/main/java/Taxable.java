@@ -1,5 +1,3 @@
-public interface Taxable extends Payable{
-
-
+public interface Taxable extends Payable {
     boolean payTaxOnEarnings();
 }

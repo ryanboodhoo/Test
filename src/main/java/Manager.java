@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Manager extends Employee{
 
     private final double EXTRADISCOUNT = .5;
@@ -31,6 +33,8 @@ public class Manager extends Employee{
 
     @Override
     void printInfo(){
+        System.out.println(getName() + "makes" + getSalary() + "and his shopping bag consist of the following items" +
+                Arrays.toString(getClothingitems()));
 
     }
 

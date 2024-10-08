@@ -1,9 +1,10 @@
-public class Business implements Payable{
+public class Business implements Payable,Taxable{
     private String name;
     private int productQty;
     private double productPrice;
+private double revenue;
 
-    public Business(String name, int productQty, double productPrice) {
+public Business(String name, int productQty, double productPrice) {
         this.name = name;
         this.productQty = productQty;
         this.productPrice = productPrice;
@@ -36,6 +37,12 @@ public class Business implements Payable{
 
     @Override
     public double calculatePay() {
-        return 0;
+        this.revenue = productPrice * productQty;
+        return getProductPrice() * getProductQty();
+    }
+
+    @Override
+    public boolean payTaxOnEarnings() {
+        return calculatePay() > 100000;
     }
 }

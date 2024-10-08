@@ -10,7 +10,12 @@ public class Cloth {
         this.name = name;
     }
 
-
+    @Override
+    public String toString() {
+        return "Cloth" +
+                "name='" + name + '\'' +
+                '}';
+    }
 
     public String getName() {
         return name;

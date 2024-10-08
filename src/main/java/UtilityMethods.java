@@ -1,6 +1,6 @@
 public class UtilityMethods {
 
-  boolean checkFitting(Customer customer, Cloth cloth){
+  public static boolean checkFitting(Customer customer, Cloth cloth){
 
       return customer.getSize() == cloth.getSize();
   }
