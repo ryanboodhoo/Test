@@ -1,4 +1,18 @@
-package PACKAGE_NAME;
+public abstract class Employee extends Customer implements TerminateAble,Payable{
 
-public class Employee {
+
+    private final double DISCOUNT = .10;
+
+    public Employee(String name, Size size, Cloth[] clothingitems) {
+        super(name, size, clothingitems);
+    }
+
+    public double getDISCOUNT() {
+        return DISCOUNT;
+    }
+
+
+
+
+
 }

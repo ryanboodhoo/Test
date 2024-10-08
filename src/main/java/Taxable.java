@@ -1,4 +1,5 @@
-package PACKAGE_NAME;
+public interface Taxable extends Payable{
 
-public interface Taxable {
+
+    boolean payTaxOnEarnings();
 }
