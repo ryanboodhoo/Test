@@ -42,6 +42,8 @@ manager.printInfo();
 
         business.payTaxOnEarnings();
 
+        Payable [] array = {hourlyEmployee,manager,business};
+UtilityMethods.printClassNamesOfPayableEntities();
 
 
 
